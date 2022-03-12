@@ -1,0 +1,65 @@
+
+*,*:before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+
+.menu-items {
+    color:#117864;
+    font-weight: 400;
+    margin-right: 0.5em;
+    font-size: 1.1em;
+}
+
+.menu-items:hover, .menu-items:focus {
+    color: #117864;
+
+}
+
+.menu-items {
+    letter-spacing: 1px;
+}
+
+.menu-items:hover,
+.menu-items:active {
+    letter-spacing: 1px;
+}
+
+
+.menu-items :after,
+.menu-items :before {
+    backface-visibility: hidden;
+    border: 1.2px solid #000000;
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.menu-items :hover:after,
+.menu-items :hover:before {
+    backface-visibility: hidden;
+    border-color: rgb(255, 255, 255);
+
+    transition: width 200ms ease-in-out;
+    width: 100%;
+}
+
+.menu-items :hover:before {
+    bottom: auto;
+    top: 0;
+}
+
+
+.logo{
+    background-image: url(./assets/images/stonks1.png);
+}
+
+.videoTag{
+    opacity: 0.3
+}

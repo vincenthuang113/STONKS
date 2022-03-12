@@ -1,0 +1,6 @@
+stonks_env
+__pyache__
+migrations
+app.db
+.env
+node_modules
